@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.min.js"></script>
+  <script src="script.js"></script>
+
+  <title>Vagas</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body ng-app="App">
+  <div class="header">
+    <a href="/index.html" class="logo">LogoEmpresa</a>
+    <div class="header-right">
+      <a class="active" href="/index.html">Vagas</a>
+      <a href="/sobre.html">Sobre</a>
+    </div>
+  </div>
+  <div class="opcao">
+    <a href="temporario.html" class="active"> Temporário </a>
+    <a href="efetivo.html"> Efetivo </a>
+  </div>
+
+  <div ng-view class="opcao">
+     <a href="vaga1.html"> Vaga 1 <br> Informação de vaga </a>
+  </div>
+</body>
+
+</html>
